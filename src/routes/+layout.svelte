@@ -6,4 +6,4 @@
 
 <Header/>
  <slot/>
-<Footer/>
+<Footer/> 
