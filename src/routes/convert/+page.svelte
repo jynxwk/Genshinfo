@@ -26,7 +26,7 @@
         <span>=</span>
         <div>
             <label for="fates">Fates</label>
-            <input type="number" id="Fates" min="0" placeholder="1" bind:value={fates} disabled>
+            <input type="number" id="Fates" min="0" placeholder="1" bind:value={fates}>
         </div>
     </form>
 </main>
