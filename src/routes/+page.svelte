@@ -106,14 +106,12 @@
         display: grid;
         justify-content: center;
         gap: 5px;
-        grid-template-columns: repeat(auto-fill, clamp(100px, 10vw, 150px));
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
     }
 
     .character {
-        aspect-ratio: 1;
         padding: 5px;
         border: 1px solid gray;
-        min-width: 50px;
     }
 
     .character > img {
@@ -125,11 +123,7 @@
         display: grid;
         justify-content: center;
         gap: 5px;
-        grid-template-columns: repeat(auto-fill, clamp(50px, 5vw, 80px));
-    }
-
-    .element {
-        /* aspect-ratio: 1; */
+        grid-template-columns: repeat(auto-fit, minmax(50px, 80px));
     }
 
     .element > img {
