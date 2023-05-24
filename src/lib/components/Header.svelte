@@ -47,6 +47,5 @@
 
     #logo > img {
         height: 100%;
-        filter: invert(1);
     }
 </style>
