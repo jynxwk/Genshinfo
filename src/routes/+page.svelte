@@ -97,7 +97,8 @@
     }
 
     article > img, aside > img {
-        width: 60%;
+        width: 100%;
+        max-width: 600px;
     }
 
     .characters {
