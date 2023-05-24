@@ -29,7 +29,7 @@
                         <a href="/characters/{character}">
                             <div class="character item">
                                 <img src="https://api.genshin.dev/characters/{character}/icon" alt="character">
-                                <span>{character}</span>
+                                <span>{character.charAt(0).toUpperCase() + character.substring(1)}</span>
                             </div>
                         </a>
                         {/each}
