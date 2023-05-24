@@ -1,19 +1,34 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 a {
     all: unset;
     cursor: pointer;
 }
 
 :root {
-    font-size: 20px;
+    font-size: clamp(12px, 2vw, 20px);
     --text-color: white;
+    --background-gradient: linear-gradient(rgb(20, 25, 30), rgb(25, 30, 45));
+    --primary: rgb(20, 25, 30);
+    --secondary: rgb(25, 30, 45);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+h4 {
+    font-size: 1.2rem;
 }
 
 body {
+    margin: 0;
     color-scheme: dark;
     display: flex;
     flex-direction: column;
