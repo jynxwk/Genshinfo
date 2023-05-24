@@ -1,13 +1,14 @@
 <script>
     /** @type {import('./$types').PageData} */
     export let data;
+    let count = 0;
+    console.log(data);
 </script>
 
 <svelte:head>
     <title>Genshinfo</title>
 </svelte:head>
 
-<img src="https://whatifgaming.com/wp-content/uploads/2021/11/Wyrd-Art.jpg" alt="genshin impact wallpaper" id="wallpaper">
 <main>
     <h1>Welcome to Genshinfo</h1>
     <div class="page">
@@ -26,14 +27,20 @@
                     <h3>Characters</h3>
                     <div class="characters">
                         {#each data.characters as character}
-                        <a href="/characters/{character}">
+                        <a href="/characters/{character.key}">
                             <div class="character item">
-                                <img src="https://api.genshin.dev/characters/{character}/icon" alt="character">
-                                <span>{character.charAt(0).toUpperCase() + character.substring(1)}</span>
+                                <img src="{character.img}" alt="character img">
+                                <span>{character.name}</span>
                             </div>
                         </a>
                         {/each}
                     </div>
+                </article>
+                <article>
+                    <h3>Nations</h3>
+                    {#each data.nations as nation}
+                    <a href="/nations/{nation}"><span>{nation.charAt(0).toUpperCase() + nation.substring(1)}</span><br></a>
+                    {/each}
                 </article>
             </section>
             <section class="side-articles">
@@ -59,14 +66,6 @@
 </main>
 
 <style>
-
-    #wallpaper {
-        position: fixed;
-        width: 100%;
-        height: 200px;
-        object-fit: cover;
-        z-index: -1;
-    }
     main {
         align-self: center;
         width: 80%;

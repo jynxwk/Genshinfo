@@ -4,6 +4,6 @@
 
 <style>
     footer {
-        margin: auto auto 0;
+        margin: auto auto 20px;
     }
 </style>
