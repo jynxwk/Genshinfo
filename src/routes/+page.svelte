@@ -78,8 +78,6 @@
     }
 
     .page {
-        position: relative;
-        top: 70px;
         padding: 1% 5%;
         background: var(--secondary);
         display: flex;
@@ -130,11 +128,15 @@
     }
 
     .element {
-        aspect-ratio: 1;
+        /* aspect-ratio: 1; */
     }
 
     .element > img {
         width: 100%;
+    }
+
+    .item {
+        transition: background-color 0.3s;
     }
 
     .item:hover {
